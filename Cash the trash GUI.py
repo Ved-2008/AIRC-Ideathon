@@ -7,7 +7,7 @@ trash_types = ["Paper", "Plastic", "Organic"]
 total_items = 0  # campus recycling counter
 
 window = tk.Tk()
-window.title("Smart Trash Bin Reward System")
+window.title("Cash The Trash")
 window.geometry("400x550")
 
 def clear_screen():
@@ -17,7 +17,7 @@ def clear_screen():
 # HOME SCREEN 
 def home_screen():
     clear_screen()
-    tk.Label(window, text="Smart Recycling System",
+    tk.Label(window, text="Cash the Trash Recycling System",
              font=("Helvetica", 16, "bold")).pack(pady=40)
 
     tk.Label(window, text="Is this your first time?").pack(pady=10)
@@ -132,4 +132,5 @@ def deposit_screen():
 
 # Start app
 home_screen()
+
 window.mainloop()
